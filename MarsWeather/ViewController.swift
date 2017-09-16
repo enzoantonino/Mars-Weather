@@ -26,19 +26,27 @@ class ViewController: UIViewController {
     @IBOutlet var pressureLabel: UILabel!
     @IBOutlet var backgroundImageView: UIImageView!
     
+    var networkFailed: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.backgroundImageView.image = #imageLiteral(resourceName: "mars")
         
-        //fetch data
-        self.fetchData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if self.networkFailed {
+            fetchData()
+        }
     }
     
     func fetchData() {
@@ -51,8 +59,10 @@ class ViewController: UIViewController {
                 case .success(let weatherResponse):
                     if let weather = weatherResponse.report {
                         self.fillUI(weather: weather)
+                        self.networkFailed = false
                     } else {
                         print("no data sent by the server")
+                        self.networkFailed = true
                         let alert = UIAlertController(title: "Attention!", message: "We didn't receive any informations. Retry later", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
                             print("ok button choosed!")
@@ -61,6 +71,7 @@ class ViewController: UIViewController {
                     }
                 case .failure:
                     print("failure")
+                    self.networkFailed = true
                     let alert = UIAlertController(title: "Attention!", message: "Something went wrong during the download of informations", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
                         print("ok button choosed!")
