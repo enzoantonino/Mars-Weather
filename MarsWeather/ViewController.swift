@@ -24,10 +24,13 @@ class ViewController: UIViewController {
     @IBOutlet var sunriseLabel: UILabel!
     @IBOutlet var sunsetLabel: UILabel!
     @IBOutlet var pressureLabel: UILabel!
+    @IBOutlet var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.backgroundImageView.image = #imageLiteral(resourceName: "mars")
         
         //fetch data
         self.fetchData()

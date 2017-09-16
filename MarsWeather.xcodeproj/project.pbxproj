@@ -18,6 +18,7 @@
 		579410041F6D248B005F25A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 579410031F6D248B005F25A4 /* README.md */; };
 		579410061F6D3E01005F25A4 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579410051F6D3E01005F25A4 /* ArchiveViewController.swift */; };
 		579410081F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579410071F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift */; };
+		5794100C1F6D5544005F25A4 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794100B1F6D5544005F25A4 /* CustomUILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		579410031F6D248B005F25A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		579410051F6D3E01005F25A4 /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
 		579410071F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedArchiveTableViewCell.swift; sourceTree = "<group>"; };
+		5794100B1F6D5544005F25A4 /* CustomUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 		7ECBBA9C110C8603BCA08C36 /* Pods-MarsWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather.release.xcconfig"; sourceTree = "<group>"; };
 		CCFEAD873CA85A93F209E4A2 /* Pods_MarsWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				57940FEE1F6D1DB1005F25A4 /* Main.storyboard */,
 				57940FF11F6D1DB1005F25A4 /* Assets.xcassets */,
 				57940FF31F6D1DB1005F25A4 /* LaunchScreen.storyboard */,
+				5794100B1F6D5544005F25A4 /* CustomUILabel.swift */,
 				579410071F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift */,
 			);
 			name = View;
@@ -266,6 +269,7 @@
 				579410061F6D3E01005F25A4 /* ArchiveViewController.swift in Sources */,
 				57940FED1F6D1DB1005F25A4 /* ViewController.swift in Sources */,
 				579410041F6D248B005F25A4 /* README.md in Sources */,
+				5794100C1F6D5544005F25A4 /* CustomUILabel.swift in Sources */,
 				579410001F6D201F005F25A4 /* Router.swift in Sources */,
 				57940FEB1F6D1DB1005F25A4 /* AppDelegate.swift in Sources */,
 			);

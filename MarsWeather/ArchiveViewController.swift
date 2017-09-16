@@ -13,6 +13,7 @@ import AlamofireObjectMapper
 class ArchiveViewController: UIViewController {
     
     @IBOutlet var archiveTableView: UITableView!
+    @IBOutlet var backgroundImageView: UIImageView!
     
     var weathers: [Weather] = []
     var dateFormatter: DateFormatter!
@@ -23,6 +24,8 @@ class ArchiveViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.backgroundImageView.image = #imageLiteral(resourceName: "mars")
         
         self.archiveTableView.dataSource = self
         self.archiveTableView.delegate = self
@@ -160,12 +163,14 @@ extension ArchiveViewController: UITableViewDataSource {
                 }
                 cell.detailTextLabel?.text = weathers[indexPath.row].atmoOpacity != nil ? weathers[indexPath.row].atmoOpacity : "No data"
                 
+                cell.accessoryView = UIImageView(image: #imageLiteral(resourceName: "Detail"))
+                
                 return cell
             }
             
         } else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "expandedArchiveCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadCell", for: indexPath)
             self.page += 1
             self.fetchData()
             return cell
