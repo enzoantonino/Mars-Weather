@@ -12,12 +12,15 @@ import Alamofire
 enum Router: URLRequestConvertible {
     
     case latest
+    case archive(page: Int)
     
     static let baseURLString = "http://marsweather.ingenology.com/v1"
     
     var method: HTTPMethod {
         switch self {
         case .latest:
+            return .get
+        case .archive:
             return .get
         }
     }
@@ -26,6 +29,8 @@ enum Router: URLRequestConvertible {
         switch self {
         case .latest:
             return "/latest"
+        case .archive:
+            return "/archive"
         }
     }
     
@@ -38,8 +43,10 @@ enum Router: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
-        case .latest:
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: ["format":"json"])
+        case let .archive(page):
+            urlRequest = try URLEncoding.default.encode(urlRequest, with: ["page":page])
+        default:
+            break
         }
         
         return urlRequest

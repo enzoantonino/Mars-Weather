@@ -22,6 +22,26 @@ class WeatherResponse: Mappable {
     }
 }
 
+class WeatherArchiveResponse: Mappable {
+    
+    var count: Int?
+    var next: String?
+    var previous: String?
+    var results: [Weather]?
+    
+    required init?(map: Map){
+    
+    }
+    
+    func mapping(map: Map) {
+        count <- map["count"]
+        next <- map["next"]
+        previous <- map["previous"]
+        results <- map["results"]
+    }
+    
+}
+
 class Weather: Mappable {
     
     var terrestrialDate: Date?
