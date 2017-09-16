@@ -62,6 +62,13 @@ class ArchiveViewController: UIViewController {
                     if let _ = weatherArchive.results {
                         self.weathers.append(contentsOf: weatherArchive.results!)
                         self.archiveTableView.reloadData()
+                    } else {
+                        print("no data sent by the server")
+                        let alert = UIAlertController(title: "Attention!", message: "We didn't receive any informations. Retry later", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                            print("ok button choosed!")
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 case .failure:
                     print("failure")

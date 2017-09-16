@@ -51,6 +51,13 @@ class ViewController: UIViewController {
                 case .success(let weatherResponse):
                     if let weather = weatherResponse.report {
                         self.fillUI(weather: weather)
+                    } else {
+                        print("no data sent by the server")
+                        let alert = UIAlertController(title: "Attention!", message: "We didn't receive any informations. Retry later", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                            print("ok button choosed!")
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 case .failure:
                     print("failure")
