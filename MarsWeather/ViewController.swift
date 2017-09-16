@@ -54,6 +54,15 @@ class ViewController: UIViewController {
                     }
                 case .failure:
                     print("failure")
+                    let alert = UIAlertController(title: "Attention!", message: "Something went wrong during the download of informations", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                        print("ok button choosed!")
+                    }))
+                    alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { _ in
+                        print("retry")
+                        self.fetchData()
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 
         }

@@ -44,7 +44,6 @@ class ArchiveViewController: UIViewController {
         hourFormatter.timeZone = TimeZone.current
         hourFormatter.dateFormat = "HH:mm"
         
-//        self.fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,6 +65,11 @@ class ArchiveViewController: UIViewController {
                     }
                 case .failure:
                     print("failure")
+                    let alert = UIAlertController(title: "Attention!", message: "Something went wrong during the download of informations. Retry later", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                        print("ok button choosed!")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 
         }
