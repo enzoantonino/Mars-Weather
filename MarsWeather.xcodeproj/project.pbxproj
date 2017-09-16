@@ -15,7 +15,6 @@
 		57940FF51F6D1DB1005F25A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57940FF31F6D1DB1005F25A4 /* LaunchScreen.storyboard */; };
 		579410001F6D201F005F25A4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57940FFF1F6D201F005F25A4 /* Router.swift */; };
 		579410021F6D20BF005F25A4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579410011F6D20BF005F25A4 /* Weather.swift */; };
-		579410041F6D248B005F25A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 579410031F6D248B005F25A4 /* README.md */; };
 		579410061F6D3E01005F25A4 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579410051F6D3E01005F25A4 /* ArchiveViewController.swift */; };
 		579410081F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579410071F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift */; };
 		5794100C1F6D5544005F25A4 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794100B1F6D5544005F25A4 /* CustomUILabel.swift */; };
@@ -32,7 +31,6 @@
 		57940FF61F6D1DB1005F25A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57940FFF1F6D201F005F25A4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		579410011F6D20BF005F25A4 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		579410031F6D248B005F25A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		579410051F6D3E01005F25A4 /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
 		579410071F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		5794100B1F6D5544005F25A4 /* CustomUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				57940FFE1F6D1F9C005F25A4 /* Model */,
 				57940FFD1F6D1F95005F25A4 /* View */,
 				5794100F1F6D68B9005F25A4 /* Router */,
-				579410031F6D248B005F25A4 /* README.md */,
 			);
 			path = MarsWeather;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				579410081F6D5248005F25A4 /* ExpandedArchiveTableViewCell.swift in Sources */,
 				579410061F6D3E01005F25A4 /* ArchiveViewController.swift in Sources */,
 				57940FED1F6D1DB1005F25A4 /* ViewController.swift in Sources */,
-				579410041F6D248B005F25A4 /* README.md in Sources */,
 				5794100C1F6D5544005F25A4 /* CustomUILabel.swift in Sources */,
 				579410001F6D201F005F25A4 /* Router.swift in Sources */,
 				57940FEB1F6D1DB1005F25A4 /* AppDelegate.swift in Sources */,
