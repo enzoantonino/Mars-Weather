@@ -27,7 +27,29 @@ class DetailUILabel: UILabel {
         self.textColor = UIColor.white
         self.font = UIFont.boldSystemFont(ofSize: 18)
         self.text = "--"
+        
+//        let bottomBorder = CALayer()
+//        bottomBorder.borderColor = UIColor.white.cgColor
+//        bottomBorder.borderWidth = 1
+//        bottomBorder.frame = CGRect(x: -1,y: -1, width: self.frame.size.width*2, height: self.frame.height+2)
+//        self.clipsToBounds = true
+//        self.layer.addSublayer(bottomBorder)
+
     }
+    
+}
+
+class ArchiveDetailUILabel: UILabel {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.textColor = UIColor.white
+        self.font = UIFont.boldSystemFont(ofSize: 18)
+        self.text = "--"
+        
+    }
+
     
 }
 

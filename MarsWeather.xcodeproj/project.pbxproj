@@ -87,7 +87,7 @@
 				57940FFC1F6D1F8A005F25A4 /* Controller */,
 				57940FFE1F6D1F9C005F25A4 /* Model */,
 				57940FFD1F6D1F95005F25A4 /* View */,
-				57940FFF1F6D201F005F25A4 /* Router.swift */,
+				5794100F1F6D68B9005F25A4 /* Router */,
 				579410031F6D248B005F25A4 /* README.md */,
 			);
 			path = MarsWeather;
@@ -120,6 +120,14 @@
 				579410011F6D20BF005F25A4 /* Weather.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5794100F1F6D68B9005F25A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				57940FFF1F6D201F005F25A4 /* Router.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		7D965F16ADAD445FD6C7CD16 /* Frameworks */ = {

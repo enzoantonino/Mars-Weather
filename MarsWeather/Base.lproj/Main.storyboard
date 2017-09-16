@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-9d-P7y">
-                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-uC-3zo">
                                 <rect key="frame" x="16" y="0.0" width="343" height="603"/>
@@ -145,7 +145,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-ww-Y1A">
                                                 <rect key="frame" x="0.0" y="0.0" width="167.5" height="45"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiR-4k-9hw" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temp C°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiR-4k-9hw" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -162,7 +162,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iRo-a5-sXC">
                                                 <rect key="frame" x="167.5" y="0.0" width="167.5" height="45"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svG-Xs-AXZ" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temp C°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svG-Xs-AXZ" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -308,8 +308,8 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vkt-uC-3zo" secondAttribute="bottom" id="8Js-XO-tHI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vkt-uC-3zo" secondAttribute="trailing" id="HhM-mr-y1U"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aoj-9d-P7y" secondAttribute="trailing" id="pxm-7H-b0m"/>
-                            <constraint firstItem="aoj-9d-P7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rSu-o1-xwe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aoj-9d-P7y" secondAttribute="trailing" constant="-16" id="pxm-7H-b0m"/>
+                            <constraint firstItem="aoj-9d-P7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rSu-o1-xwe"/>
                             <constraint firstItem="aoj-9d-P7y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rb8-rM-uFm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aoj-9d-P7y" secondAttribute="bottom" id="u7l-D6-0ZI"/>
                             <constraint firstItem="Vkt-uC-3zo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wfs-Ok-Rif"/>
@@ -357,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U4M-DW-nCr">
-                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jMw-8R-TB3">
                                 <rect key="frame" x="16" y="8" width="343" height="595"/>
@@ -377,7 +377,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OhE-rr-KLy" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OhE-rr-KLy" customClass="ArchiveDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -400,10 +400,9 @@
                                                 </activityIndicatorView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="JWT-yA-OLR" secondAttribute="trailing" constant="154" id="Fh9-w9-y9C"/>
-                                                <constraint firstItem="JWT-yA-OLR" firstAttribute="leading" secondItem="svd-KO-K8t" secondAttribute="leadingMargin" constant="153" id="Jwo-1K-EIc"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="JWT-yA-OLR" secondAttribute="bottom" constant="4.5" id="gX2-Zd-tg7"/>
                                                 <constraint firstItem="JWT-yA-OLR" firstAttribute="top" secondItem="svd-KO-K8t" secondAttribute="topMargin" constant="3" id="mos-Se-M6m"/>
+                                                <constraint firstItem="JWT-yA-OLR" firstAttribute="centerX" secondItem="svd-KO-K8t" secondAttribute="centerX" id="rLD-w6-vFu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -416,16 +415,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-SC-ATt">
-                                                    <rect key="frame" x="12" y="12" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="18" width="316" height="45"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vai-8d-0rE" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="316" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhR-dM-OYh" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="24.5" width="319" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="24.5" width="316" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -433,19 +432,19 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PZv-R0-Gmc">
-                                                    <rect key="frame" x="12" y="65" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="71" width="316" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0sj-so-ZTz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j1-co-cJr" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mars season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-Yk-Z1x" userLabel="ls" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -453,16 +452,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-Q7-eVn">
-                                                            <rect key="frame" x="159.5" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="158" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvK-Qp-5zH" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGV-hs-m83" userLabel="season" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -472,19 +471,19 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WSa-fz-B26">
-                                                    <rect key="frame" x="12" y="118" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="124" width="316" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VjB-P0-07U">
-                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-yq-11X" userLabel="Mars date" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mars date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-92-9JU" userLabel="sol" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -492,16 +491,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dMM-EY-m4u">
-                                                            <rect key="frame" x="159.5" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="158" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abs Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6np-lf-agB" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-OD-bLp" userLabel="abs_humidity" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -511,19 +510,19 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i10-fY-ny6">
-                                                    <rect key="frame" x="12" y="171" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="177" width="316" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-7E-yzv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-5e-Wgc" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temp C°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-5e-Wgc" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-6z-8NQ" userLabel="min_temp" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -531,16 +530,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-YO-KOi">
-                                                            <rect key="frame" x="159.5" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="158" y="0.0" width="158" height="45"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APE-7j-1Ep" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temp C°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APE-7j-1Ep" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-8z-a1O" userLabel="max_temp" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -550,19 +549,19 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-DO-wPv">
-                                                    <rect key="frame" x="12" y="224" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="230" width="316" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-AW-Sxf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13K-eb-ete" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wny-uY-SmS" userLabel="wind" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -570,16 +569,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HMX-EA-p1N">
-                                                            <rect key="frame" x="159.5" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="158" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-hx-ZPh" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eun-cb-eEu" userLabel="pressure" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -589,19 +588,19 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1SN-bC-B3g">
-                                                    <rect key="frame" x="12" y="277" width="319" height="45"/>
+                                                    <rect key="frame" x="15" y="283" width="316" height="45"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-TJ-3cD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-UX-Ffb" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrN-QQ-P8E" userLabel="sunrise" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -609,16 +608,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hoD-z4-nIE">
-                                                            <rect key="frame" x="159.5" y="0.0" width="159.5" height="45"/>
+                                                            <rect key="frame" x="158" y="0.0" width="158" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R10-7N-yU3" customClass="TitleDetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-1g-RLR" userLabel="sunset" customClass="DetailUILabel" customModule="MarsWeather" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="159.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="24.5" width="158" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -629,24 +628,24 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PZv-R0-Gmc" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="1Ik-L1-ito"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1SN-bC-B3g" secondAttribute="bottom" constant="13.5" id="0fL-Ii-6OF"/>
+                                                <constraint firstItem="PZv-R0-Gmc" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="1Ik-L1-ito"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="qdd-DO-wPv" secondAttribute="trailing" constant="4" id="5BK-G8-SmB"/>
                                                 <constraint firstItem="1SN-bC-B3g" firstAttribute="top" secondItem="qdd-DO-wPv" secondAttribute="bottom" constant="8" id="5by-Eb-dBy"/>
                                                 <constraint firstItem="i10-fY-ny6" firstAttribute="top" secondItem="WSa-fz-B26" secondAttribute="bottom" constant="8" id="Bpd-Ga-pVp"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="1SN-bC-B3g" secondAttribute="bottom" constant="19.5" id="C69-7O-mM5"/>
-                                                <constraint firstItem="WSa-fz-B26" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="Ck4-OB-6UJ"/>
-                                                <constraint firstItem="pb8-SC-ATt" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="GzJ-bP-13d"/>
+                                                <constraint firstItem="WSa-fz-B26" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="Ck4-OB-6UJ"/>
+                                                <constraint firstItem="pb8-SC-ATt" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="GzJ-bP-13d"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="i10-fY-ny6" secondAttribute="trailing" constant="4" id="Jrh-gU-cPG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="PZv-R0-Gmc" secondAttribute="trailing" constant="4" id="N3Q-6g-SLR"/>
-                                                <constraint firstItem="1SN-bC-B3g" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="N5h-vU-X6X"/>
+                                                <constraint firstItem="1SN-bC-B3g" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="N5h-vU-X6X"/>
                                                 <constraint firstItem="PZv-R0-Gmc" firstAttribute="top" secondItem="pb8-SC-ATt" secondAttribute="bottom" constant="8" id="Nfw-V2-juH"/>
-                                                <constraint firstItem="pb8-SC-ATt" firstAttribute="top" secondItem="zRA-4R-cFD" secondAttribute="topMargin" constant="4" id="UcX-w9-eUz"/>
+                                                <constraint firstItem="pb8-SC-ATt" firstAttribute="top" secondItem="zRA-4R-cFD" secondAttribute="topMargin" constant="10" id="UcX-w9-eUz"/>
                                                 <constraint firstItem="WSa-fz-B26" firstAttribute="top" secondItem="PZv-R0-Gmc" secondAttribute="bottom" constant="8" id="VDa-kS-Ppd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="1SN-bC-B3g" secondAttribute="trailing" constant="4" id="ecx-1l-3i8"/>
                                                 <constraint firstItem="qdd-DO-wPv" firstAttribute="top" secondItem="i10-fY-ny6" secondAttribute="bottom" constant="8" id="i3u-qK-sp4"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pb8-SC-ATt" secondAttribute="trailing" constant="4" id="kzX-a6-PfS"/>
-                                                <constraint firstItem="i10-fY-ny6" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="lML-iN-GOR"/>
-                                                <constraint firstItem="qdd-DO-wPv" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="4" id="wcx-X2-JuH"/>
+                                                <constraint firstItem="i10-fY-ny6" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="lML-iN-GOR"/>
+                                                <constraint firstItem="qdd-DO-wPv" firstAttribute="leading" secondItem="zRA-4R-cFD" secondAttribute="leadingMargin" constant="7" id="wcx-X2-JuH"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="WSa-fz-B26" secondAttribute="trailing" constant="4" id="xmj-Jc-ewN"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -673,12 +672,12 @@
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="jMw-8R-TB3" secondAttribute="leading" id="6DY-zJ-cnF"/>
                             <constraint firstItem="U4M-DW-nCr" firstAttribute="top" secondItem="sJn-8v-4YY" secondAttribute="bottom" id="CtT-G7-k4B"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="U4M-DW-nCr" secondAttribute="trailing" id="JXw-DV-FyM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U4M-DW-nCr" secondAttribute="trailing" constant="-16" id="JXw-DV-FyM"/>
                             <constraint firstItem="BQ5-9c-745" firstAttribute="top" secondItem="U4M-DW-nCr" secondAttribute="bottom" id="TwL-zb-Meq"/>
                             <constraint firstItem="BQ5-9c-745" firstAttribute="top" secondItem="jMw-8R-TB3" secondAttribute="bottom" id="Yav-Dy-wrB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jMw-8R-TB3" secondAttribute="trailing" id="e57-ZA-USh"/>
                             <constraint firstItem="jMw-8R-TB3" firstAttribute="top" secondItem="sJn-8v-4YY" secondAttribute="bottom" constant="8" id="fKJ-Z5-BAv"/>
-                            <constraint firstItem="U4M-DW-nCr" firstAttribute="leading" secondItem="QNT-2H-T6m" secondAttribute="leadingMargin" id="kKC-7V-U3I"/>
+                            <constraint firstItem="U4M-DW-nCr" firstAttribute="leading" secondItem="QNT-2H-T6m" secondAttribute="leadingMargin" constant="-16" id="kKC-7V-U3I"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
