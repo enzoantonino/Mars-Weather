@@ -16,7 +16,9 @@ class ArchiveViewController: UIViewController {
     @IBOutlet var backgroundImageView: UIImageView!
     
     var weathers: [Weather] = []
-    var dateFormatter: DateFormatter!
+    let dateFormatter = DateFormatter()
+    let hourFormatter = DateFormatter()
+
     var page: Int = 0
     var expandedRow: IndexPath?
 
@@ -34,10 +36,13 @@ class ArchiveViewController: UIViewController {
         self.archiveTableView.estimatedRowHeight = 44
         self.archiveTableView.rowHeight = UITableViewAutomaticDimension
         
-        dateFormatter = DateFormatter()
         dateFormatter.locale = NSLocale.current
         dateFormatter.timeZone = TimeZone.current
         dateFormatter.dateStyle = .long
+        
+        hourFormatter.locale = NSLocale.current
+        hourFormatter.timeZone = TimeZone.current
+        hourFormatter.dateFormat = "HH:mm"
         
 //        self.fetchData()
     }
@@ -83,80 +88,14 @@ extension ArchiveViewController: UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "expandedArchiveCell", for: indexPath) as! ExpandedArchiveTableViewCell
                 
                 let weather = self.weathers[indexPath.row]
-                
-                let dateFormatter = DateFormatter()
-                dateFormatter.locale = NSLocale.current
-                dateFormatter.timeZone = TimeZone.current
-                dateFormatter.dateStyle = .short
-                
-                if weather.marsDate != nil {
-                    cell.solLabel.text = "\(weather.marsDate!)"
-                }
-                
-                if weather.terrestrialDate != nil {
-                    cell.terrestrialDateLabel.text = dateFormatter.string(from: weather.terrestrialDate!)
-                }
-                
-                if weather.atmoOpacity != nil {
-                    cell.atmoOpacityLabel.text = weather.atmoOpacity!
-                }
-                
-                if weather.marsSeason != nil {
-                    cell.lsLabel.text = "\(weather.marsSeason!)"
-                }
-                
-                if weather.minTemp != nil {
-                    cell.minTempLabel.text = "\(weather.minTemp!)"
-                }
-                
-                if weather.maxTemp != nil {
-                    cell.maxTempLabel.text = "\(weather.maxTemp!)"
-                }
-                
-                if weather.absHumidity != nil {
-                    cell.absHumidityLabel.text = weather.absHumidity!
-                } else {
-                    cell.absHumidityLabel.text = "--"
-                }
-                
-                if weather.windSpeed != nil {
-                    cell.windLabel.text = "\(weather.windSpeed!)"
-                } else {
-                    cell.windLabel.text = "--"
-                }
-                
-                if weather.windDirection != nil {
-                    cell.windLabel.text = "\(cell.windLabel.text!) \(weather.windDirection!)"
-                }
-                
-                if weather.season != nil {
-                    cell.seasonLabel.text = weather.season!
-                }
-                
-                if weather.sunrise != nil {
-                    cell.sunriseLabel.text = dateFormatter.string(from: weather.sunrise!)
-                }
-                
-                if weather.sunset != nil {
-                    cell.sunsetLabel.text = dateFormatter.string(from: weather.sunset!)
-                }
-                
-                if weather.pressure != nil {
-                    cell.pressureLabel.text = "\(weather.pressure!)"
-                } else {
-                    cell.pressureLabel.text = "--"
-                }
-                
-                if weather.pressureString != nil {
-                    cell.pressureLabel.text = "\(cell.pressureLabel.text!) - \(weather.pressureString!)"
-                }
-                
+                self.fillExpandedCell(cell, withWeather: weather)
                 return cell
 
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "archiveCell", for: indexPath)
                 
                 if let date = weathers[indexPath.row].terrestrialDate {
+                    self.dateFormatter.dateStyle = .long
                     cell.textLabel?.text = self.dateFormatter.string(from: date)
                 } else {
                     
@@ -177,12 +116,81 @@ extension ArchiveViewController: UITableViewDataSource {
         }
     }
     
+    func fillExpandedCell(_ cell: ExpandedArchiveTableViewCell, withWeather weather: Weather) {
+        
+        if weather.marsDate != nil {
+            cell.solLabel.text = "\(weather.marsDate!)"
+        }
+        
+        if weather.terrestrialDate != nil {
+            dateFormatter.dateStyle = .long
+            cell.terrestrialDateLabel.text = self.dateFormatter.string(from: weather.terrestrialDate!)
+        }
+        
+        if weather.atmoOpacity != nil {
+            cell.atmoOpacityLabel.text = weather.atmoOpacity!
+        }
+        
+        if weather.marsSeason != nil {
+            cell.lsLabel.text = "\(weather.marsSeason!)"
+        }
+        
+        if weather.minTemp != nil {
+            cell.minTempLabel.text = "\(weather.minTemp!)"
+        }
+        
+        if weather.maxTemp != nil {
+            cell.maxTempLabel.text = "\(weather.maxTemp!)"
+        }
+        
+        if weather.absHumidity != nil {
+            cell.absHumidityLabel.text = weather.absHumidity!
+        } else {
+            cell.absHumidityLabel.text = "--"
+        }
+        
+        if weather.windSpeed != nil {
+            cell.windLabel.text = "\(weather.windSpeed!)"
+        } else {
+            cell.windLabel.text = "--"
+        }
+        
+        if weather.windDirection != nil {
+            cell.windLabel.text = "\(cell.windLabel.text!) \(weather.windDirection!)"
+        }
+        
+        if weather.season != nil {
+            cell.seasonLabel.text = weather.season!
+        }
+        
+        if weather.sunrise != nil {
+            dateFormatter.dateStyle = .short
+            cell.sunriseLabel.text = hourFormatter.string(from: weather.sunrise!)
+        }
+        
+        if weather.sunset != nil {
+            dateFormatter.dateStyle = .short
+            cell.sunsetLabel.text = hourFormatter.string(from: weather.sunset!)
+        }
+        
+        if weather.pressure != nil {
+            cell.pressureLabel.text = "\(weather.pressure!)"
+        } else {
+            cell.pressureLabel.text = "--"
+        }
+        
+        if weather.pressureString != nil {
+            cell.pressureLabel.text = "\(cell.pressureLabel.text!) - \(weather.pressureString!)"
+        }
+
+    }
+    
 }
 
 extension ArchiveViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        
         var indexPathToReload: [IndexPath] = [indexPath]
         if let _ = self.expandedRow {
             if indexPath == self.expandedRow {

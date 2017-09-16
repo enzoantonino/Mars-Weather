@@ -67,6 +67,11 @@ class ViewController: UIViewController {
         dateFormatter.timeZone = TimeZone.current
         dateFormatter.dateStyle = .short
         
+        let hourFormatter = DateFormatter()
+        hourFormatter.locale = NSLocale.current
+        hourFormatter.timeZone = TimeZone.current
+        hourFormatter.dateFormat = "HH:mm"
+        
         if weather.marsDate != nil {
             self.solLabel.text = "\(weather.marsDate!)"
         }
@@ -112,11 +117,11 @@ class ViewController: UIViewController {
         }
         
         if weather.sunrise != nil {
-            self.sunriseLabel.text = dateFormatter.string(from: weather.sunrise!)
+            self.sunriseLabel.text = hourFormatter.string(from: weather.sunrise!)
         }
         
         if weather.sunset != nil {
-            self.sunsetLabel.text = dateFormatter.string(from: weather.sunset!)
+            self.sunsetLabel.text = hourFormatter.string(from: weather.sunset!)
         }
         
 //        if weather.minTempFahrenheit != nil {

@@ -49,6 +49,7 @@ class SubtitleUILabel: UILabel {
         
         self.textColor = UIColor.white
         self.font = UIFont.systemFont(ofSize: 18)
+        self.text = "--"
     }
     
 }
