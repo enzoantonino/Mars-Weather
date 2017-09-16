@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E123C869F0DD948A9D3FE1D /* Pods_MarsWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFEAD873CA85A93F209E4A2 /* Pods_MarsWeather.framework */; };
 		57940FEB1F6D1DB1005F25A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57940FEA1F6D1DB1005F25A4 /* AppDelegate.swift */; };
 		57940FED1F6D1DB1005F25A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57940FEC1F6D1DB1005F25A4 /* ViewController.swift */; };
 		57940FF01F6D1DB1005F25A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57940FEE1F6D1DB1005F25A4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12EE10A0578533219AB1BECF /* Pods-MarsWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		57940FE71F6D1DB1005F25A4 /* MarsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57940FEA1F6D1DB1005F25A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57940FEC1F6D1DB1005F25A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		57940FF11F6D1DB1005F25A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57940FF41F6D1DB1005F25A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57940FF61F6D1DB1005F25A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECBBA9C110C8603BCA08C36 /* Pods-MarsWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather.release.xcconfig"; sourceTree = "<group>"; };
+		CCFEAD873CA85A93F209E4A2 /* Pods_MarsWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E123C869F0DD948A9D3FE1D /* Pods_MarsWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47505B5609C02751954C596F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12EE10A0578533219AB1BECF /* Pods-MarsWeather.debug.xcconfig */,
+				7ECBBA9C110C8603BCA08C36 /* Pods-MarsWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		57940FDE1F6D1DB1005F25A4 = {
 			isa = PBXGroup;
 			children = (
 				57940FE91F6D1DB1005F25A4 /* MarsWeather */,
 				57940FE81F6D1DB1005F25A4 /* Products */,
+				47505B5609C02751954C596F /* Pods */,
+				7D965F16ADAD445FD6C7CD16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = MarsWeather;
 			sourceTree = "<group>";
 		};
+		7D965F16ADAD445FD6C7CD16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCFEAD873CA85A93F209E4A2 /* Pods_MarsWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57940FF91F6D1DB1005F25A4 /* Build configuration list for PBXNativeTarget "MarsWeather" */;
 			buildPhases = (
+				099D6C04E7378FAD8F99FB8A /* [CP] Check Pods Manifest.lock */,
 				57940FE31F6D1DB1005F25A4 /* Sources */,
 				57940FE41F6D1DB1005F25A4 /* Frameworks */,
 				57940FE51F6D1DB1005F25A4 /* Resources */,
+				F3E65CE057589AFD98741501 /* [CP] Embed Pods Frameworks */,
+				92B9BE57DC0F46F2E1282116 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099D6C04E7378FAD8F99FB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B9BE57DC0F46F2E1282116 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E65CE057589AFD98741501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarsWeather/Pods-MarsWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57940FE31F6D1DB1005F25A4 /* Sources */ = {
@@ -261,6 +346,7 @@
 		};
 		57940FFA1F6D1DB1005F25A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12EE10A0578533219AB1BECF /* Pods-MarsWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7D9GVK4UXP;
@@ -274,6 +360,7 @@
 		};
 		57940FFB1F6D1DB1005F25A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECBBA9C110C8603BCA08C36 /* Pods-MarsWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7D9GVK4UXP;
